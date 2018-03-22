@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:visibility="visible"
+    tools:context="com.example.florence.mapsagain.Marketers_Activity">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+                android:layout_gravity="bottom"
+        app:menu="@menu/navigation" />
+
+
+    <fragment
+        android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_below="@id/navigation"
+        android:layout_height="match_parent"
+        tools:context=".Retrieving_cordinates"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="118dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/map"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="105dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Admin"
+        android:layout_marginStart="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button4" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Client"
+        android:layout_marginStart="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

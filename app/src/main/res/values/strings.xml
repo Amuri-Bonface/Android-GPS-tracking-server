@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nannie</string>
+    <string name="title_activity_maps">Nannie</string>
+    <string name="alani_technologies">Alani Technologies</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Client Registration </string>
+    <string name="title_personal">Personal </string>
+    <string name="title_notifications">Exit</string>
+    <string name="action_settings">Alani Technologies: +254 717264871</string>
+</resources>
